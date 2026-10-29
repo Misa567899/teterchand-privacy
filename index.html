@@ -1,105 +1,117 @@
-
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index,follow">
-  <title>Privacy Policy — TeterChand</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      padding: 48px 20px;
-      background: #f5f7fb;
-      color: #172033;
-      font: 16px/1.8 -apple-system, BlinkMacSystemFont,
-            "Segoe UI", sans-serif;
-    }
-    main {
-      max-width: 760px;
-      margin: auto;
-      padding: 36px;
-      background: #fff;
-      border: 1px solid #e5eaf2;
-      border-radius: 18px;
-    }
-    h1 { line-height: 1.3; color: #123bb5; }
-    h2 { margin-top: 28px; font-size: 20px; }
-    p, li { color: #465168; }
-    a { color: #1749d1; }
-    .updated { color: #68758b; font-size: 14px; }
-    @media (max-width: 520px) {
-      body { padding: 16px 10px; }
-      main { padding: 22px 18px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the TeterChand Chrome extension, in Persian and English.">
+<meta name="color-scheme" content="light">
+<title>سیاست حفظ حریم خصوصی | تترچند</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <h1>Privacy Policy</h1>
-  <p><strong>TeterChand — USDT Price Extension</strong></p>
-  <p class="updated">Last updated: October 29, 2026</p>
+<a class="skip-link" href="#main" data-i18n="skip">پرش به محتوای اصلی</a>
 
-  <h2>1. Overview</h2>
-  <p>
-    TeterChand is a Chrome extension that displays the USDT market
-    price using publicly available market data from Wallex.
-  </p>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">T</span>
+      <span class="brand-text">
+        <span class="brand-name" data-i18n="brand">تترچند</span>
+        <span class="brand-sub" data-i18n="brandSub">افزونه کروم</span>
+      </span>
+    </div>
+    <button id="langToggle" class="lang-toggle" type="button" aria-pressed="false" aria-label="Switch language to English">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-2.4a15.7 15.7 0 0 0-1.2-3.1A8 8 0 0 1 18.9 8ZM12 4c.6.9 1.1 2 1.5 3.3h-3C10.9 6 11.4 4.9 12 4ZM4.3 14a8 8 0 0 1 0-4h2.8a17 17 0 0 0 0 4H4.3Zm.8 2h2.4c.3 1.1.7 2.1 1.2 3.1A8 8 0 0 1 5.1 16Zm2.4-8H5.1a8 8 0 0 1 3.6-3.1A15.7 15.7 0 0 0 7.5 8ZM12 20c-.6-.9-1.1-2-1.5-3.3h3C13.1 18 12.6 19.1 12 20Zm1.9-5.3h-3.8a14.7 14.7 0 0 1 0-5.4h3.8a14.7 14.7 0 0 1 0 5.4Zm.4 4.4c.5-1 .9-2 1.2-3.1h2.4a8 8 0 0 1-3.6 3.1Zm1.6-5.1a17 17 0 0 0 0-4h2.8a8 8 0 0 1 0 4h-2.8Z" fill="currentColor"/>
+      </svg>
+      <span id="langToggleLabel">English</span>
+    </button>
+  </div>
+</header>
 
-  <h2>2. Information We Collect</h2>
-  <p>
-    The extension does not require an account and is not designed
-    to collect personal information, browsing history, passwords,
-    or website content. It does not include advertising or analytics
-    tracking.
-  </p>
-  <p>
-    The extension sends requests to the Wallex API to retrieve market
-    prices. Wallex may receive standard technical information associated
-    with those requests, such as an IP address, according to its own
-    services and policies.
-  </p>
+<main id="main" class="container">
+  <section class="hero" aria-labelledby="page-title">
+    <p class="eyebrow" data-i18n="eyebrow">حریم خصوصی</p>
+    <h1 id="page-title" data-i18n="heroTitle">سیاست حفظ حریم خصوصی</h1>
+    <p class="hero-text" data-i18n="heroText">این صفحه توضیح می‌دهد افزونه تترچند چه داده‌هایی را ذخیره می‌کند، چه درخواست‌های شبکه‌ای انجام می‌دهد و چگونه می‌توانید درباره حریم خصوصی با ما در ارتباط باشید.</p>
+    <p class="updated" data-i18n="updated">آخرین به‌روزرسانی: ۲۹ اکتبر ۲۰۲۶</p>
+  </section>
 
-  <h2>3. Local Storage</h2>
-  <p>
-    The extension may store the latest retrieved price and its update
-    timestamp locally in your browser using Chrome's storage facilities.
-    This allows the last available price to remain visible when a refresh
-    fails. This information is not sent to the extension developer.
-  </p>
+  <section class="card" aria-labelledby="overview-title">
+    <h2 id="overview-title" data-i18n="overviewTitle">مرور کلی</h2>
+    <p data-i18n="overviewP1">تترچند یک افزونه مرورگر کروم است که قیمت‌های عمومی بازار تتر (USDT) به تومان را نمایش می‌دهد. این افزونه برای کارکرد خود به حساب کاربری، اطلاعات هویتی یا داده‌های حساس دسترسی ندارد.</p>
+    <p data-i18n="overviewP2">ما ادعا نمی‌کنیم که افزونه هیچ درخواست شبکه‌ای انجام نمی‌دهد یا هیچ فراداده‌ای منتقل نمی‌شود؛ بخش «درخواست‌های شبکه‌ای» این موضوع را دقیق توضیح می‌دهد.</p>
+  </section>
 
-  <h2>4. Third-Party Service</h2>
-  <p>
-    Market data is requested from Wallex. The availability and accuracy
-    of that data are subject to Wallex's service. Please review
-    <a href="https://wallex.ir/" target="_blank" rel="noopener noreferrer">
-      Wallex's website
+  <section class="card" aria-labelledby="storage-title">
+    <h2 id="storage-title" data-i18n="storageTitle">داده‌هایی که به‌صورت محلی ذخیره می‌شوند</h2>
+    <p data-i18n="storageIntro">افزونه آخرین قیمت‌های دریافت‌شده و اطلاعات کش را به‌صورت محلی روی دستگاه شما و با استفاده از chrome.storage.local نگه می‌دارد:</p>
+    <ul class="list">
+      <li data-i18n="storageLi1">آخرین مقادیر قیمت تتر/تومان که از Wallex دریافت شده‌اند.</li>
+      <li data-i18n="storageLi2">زمان دریافت یا انقضای کش، تا افزونه بدون درخواست تکراری داده‌های به‌روز را نمایش دهد.</li>
+      <li data-i18n="storageLi3">این داده‌ها فقط در پروفایل مرورگر شما باقی می‌مانند؛ توسعه‌دهنده سروری برای جمع‌آوری آن‌ها ندارد.</li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="network-title">
+    <h2 id="network-title" data-i18n="networkTitle">درخواست‌های شبکه‌ای</h2>
+    <p data-i18n="networkIntro">برای نمایش قیمت‌ها، افزونه از طریق HTTPS درخواست‌هایی به API عمومی Wallex ارسال می‌کند. این درخواست‌ها فقط برای دریافت قیمت‌های عمومی بازار انجام می‌شوند.</p>
+    <ul class="list">
+      <li data-i18n="networkLi1">درخواست‌ها با HTTPS و به دامنه API والکس ارسال می‌شوند.</li>
+      <li data-i18n="networkLi2">مانند هر درخواست اینترنتی، فراداده‌های فنی استاندارد مانند آدرس IP، زمان درخواست و اطلاعات عامل کاربر می‌تواند برای Wallex قابل مشاهده باشد.</li>
+      <li data-i18n="networkLi3">تترچند از این درخواست‌ها برای ردیابی، تبلیغات یا تحلیل رفتار استفاده نمی‌کند و داده تحلیلی ارسال نمی‌کند.</li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="permissions-title">
+    <h2 id="permissions-title" data-i18n="permissionsTitle">مجوزهای افزونه</h2>
+    <div class="grid">
+      <article class="mini">
+        <h3 data-i18n="permStorageName">storage</h3>
+        <p data-i18n="permStorageBody">برای ذخیره محلی قیمت‌ها و اطلاعات کش با chrome.storage.local.</p>
+      </article>
+      <article class="mini">
+        <h3 data-i18n="permHostName">دسترسی میزبان</h3>
+        <p data-i18n="permHostBody">دسترسی به دامنه API والکس، فقط برای دریافت قیمت‌های عمومی بازار از طریق HTTPS.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="third-title">
+    <h2 id="third-title" data-i18n="thirdTitle">سرویس‌های شخص ثالث</h2>
+    <div class="grid">
+      <article class="mini">
+        <h3 data-i18n="thirdWallexTitle">Wallex</h3>
+        <p data-i18n="thirdWallexBody">منبع قیمت‌های عمومی بازار است. درخواست‌های افزونه به سرورهای Wallex می‌رسد و پردازش آن‌ها تابع سیاست حریم خصوصی خود Wallex است. تترچند کنترلی بر داده‌هایی که Wallex نگه می‌دارد ندارد.</p>
+      </article>
+      <article class="mini">
+        <h3 data-i18n="thirdGithubTitle">GitHub</h3>
+        <p data-i18n="thirdGithubBody">برای ارتباط و گزارش مشکل از GitHub Issues استفاده می‌کنیم. هر محتوایی که در GitHub منتشر می‌کنید تابع سیاست حریم خصوصی GitHub است.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="contact-title">
+    <h2 id="contact-title" data-i18n="contactTitle">ارتباط با ما</h2>
+    <p data-i18n="contactText">برای پرسش، گزارش مشکل یا درخواست مربوط به حریم خصوصی، از طریق GitHub Issues با ما در ارتباط باشید. لطفاً اطلاعات حساس یا خصوصی را در Issues عمومی منتشر نکنید.</p>
+    <a class="btn" href="https://github.com/Misa567899/teterchand-privacy/issues" target="_blank" rel="noopener noreferrer">
+      <span aria-hidden="true">↗</span> GitHub Issues
     </a>
-    for information about its services and policies.
-  </p>
+  </section>
 
-  <h2>5. Data Security and Retention</h2>
-  <p>
-    Cached price information remains in your browser until it is replaced
-    or removed. You can remove locally stored extension data by removing
-    the extension or clearing its stored data through Chrome.
-  </p>
-
-  <h2>6. Changes to This Policy</h2>
-  <p>
-    This policy may be updated if the extension's functionality or data
-    practices change. The latest version will be published on this page.
-  </p>
-
-  <h2>7. Contact</h2>
-  <p>
-    For privacy questions about TeterChand, contact the extension
-    publisher through their GitHub profile:
-    <a href="https://github.com/Misa567899">
-      github.com/Misa567899
-    </a>.
-  </p>
+  <section class="card" aria-labelledby="updates-title">
+    <h2 id="updates-title" data-i18n="updatesTitle">به‌روزرسانی سیاست</h2>
+    <p data-i18n="updatesText">ممکن است این سیاست با تغییر عملکرد افزونه به‌روزرسانی شود. نسخه جدید در همین صفحه منتشر می‌شود و تاریخ به‌روزرسانی در بالای صفحه تغییر می‌کند. استفاده مستمر از افزونه پس از انتشار تغییرات به معنای پذیرش نسخه به‌روزشده است.</p>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p><span data-i18n="footerNote">تترچند — نمایش قیمت تتر به تومان</span> · <a href="https://github.com/Misa567899/teterchand-privacy/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
